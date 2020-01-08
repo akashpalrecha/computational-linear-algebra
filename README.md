@@ -8,37 +8,9 @@
 
 -->
 
-# Project name here
+# Computational Linear Algebra by Fast.ai
 
-> Summary description here.
-
-
-This file will become your README and also the index of your documentation.
-
-## Install
-
-`pip install your_project_name`
-
-## How to use
-
-Fill me in please! Don't forget code examples:
-<div class="codecell" markdown="1">
-<div class="input_area" markdown="1">
-
-```python
-1+1
-```
-
-</div>
-<div class="output_area" markdown="1">
+> This project contains my work on [Fast.ai](https://www.fast.ai)'s [Computational Linear Algebra Course](https://github.com/fastai/numerical-linear-algebra) along with my own explorations of the subject.<br>
 
 
-
-
-    2
-
-
-
-</div>
-
-</div>
+This is a work in progress. This website be updated as and when I make more progress towards the course.
