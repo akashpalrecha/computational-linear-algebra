@@ -1,6 +1,7 @@
 {
   "computational_linear_algebra": {
     "Overview": "/",
-    "module name here": "/core"
+    "Starter notebook": "/core",
+    "Lesson 1": "/lesson1"
   }
 }

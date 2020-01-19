@@ -10,8 +10,11 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: module name here
+      title: Starter notebook
       url: /core
+    - output: web,pdf
+      title: Lesson 1
+      url: /lesson1
     output: web
     title: computational_linear_algebra
   output: web

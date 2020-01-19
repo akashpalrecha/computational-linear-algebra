@@ -3,6 +3,12 @@
 __all__ = ['print_all']
 
 # Cell
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import sklearn
+
+# Cell
 def print_all(*args, **kwargs):
     for arg in args: print(arg)
     for key, value in kwargs.items(): print(f"{key} : {value}")
