@@ -2,9 +2,11 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"print_all": "00_core.ipynb"}
+index = {"print_all": "00_core.ipynb",
+         "shapes": "01_lesson1.ipynb"}
 
-modules = ["core.py"]
+modules = ["core.py",
+           "lesson1.py"]
 
 doc_url = "https://akashpalrecha.github.io/computational-linear-algebra/"
 
