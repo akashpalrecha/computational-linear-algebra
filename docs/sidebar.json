@@ -2,6 +2,7 @@
   "computational_linear_algebra": {
     "Overview": "/",
     "Starter notebook": "/core",
-    "Lesson 1": "/lesson1"
+    "Lesson 1": "/lesson1",
+    "Title": "/Topic_Modelling_with_SVD_NMF"
   }
 }

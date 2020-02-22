@@ -15,6 +15,9 @@ entries:
     - output: web,pdf
       title: Lesson 1
       url: /lesson1
+    - output: web,pdf
+      title: Title
+      url: /Topic_Modelling_with_SVD_NMF
     output: web
     title: computational_linear_algebra
   output: web
