@@ -4,6 +4,6 @@
     "Starter notebook": "/core",
     "Lesson 1": "/lesson1",
     "Topic Modelling with NMF and SVD": "/Topic_Modelling_with_SVD_NMF",
-    "Exploring PCA": "/PCA"
+    "PCA": "/PCA"
   }
 }
