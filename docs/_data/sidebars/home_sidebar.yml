@@ -16,8 +16,11 @@ entries:
       title: Lesson 1
       url: /lesson1
     - output: web,pdf
-      title: Title
+      title: Topic Modelling with NMF and SVD
       url: /Topic_Modelling_with_SVD_NMF
+    - output: web,pdf
+      title: Exploring PCA
+      url: /PCA
     output: web
     title: computational_linear_algebra
   output: web

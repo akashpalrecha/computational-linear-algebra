@@ -3,10 +3,14 @@
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
 index = {"print_all": "00_core.ipynb",
-         "shapes": "01_lesson1.ipynb"}
+         "shapes": "01_lesson1.ipynb",
+         "stats": "03_PCA.ipynb",
+         "torchCov": "03_PCA.ipynb",
+         "Arrow3D": "03_PCA.ipynb"}
 
 modules = ["core.py",
-           "lesson1.py"]
+           "lesson1.py",
+           "pca.py"]
 
 doc_url = "https://akashpalrecha.github.io/computational-linear-algebra/"
 
