@@ -95,7 +95,7 @@ mean_vars+= [[24576, 8192], [24576, 32768], [49152, 16384]]
 n_values  = [100, 200, 500, 1000, 2000, 5000, 10000, 20000, 50000, 100000, 200000, 500000, 1000000, 2000000
             ,5000000, 10000000]
 dimensions= [10, 50, 100, 200, 400]
-dimensions= [10,]
+# dimensions= [10,]
 
 
 total = len(n_values) * len(mean_vars) * len(dimensions) * 2
@@ -116,7 +116,7 @@ df.K = df.K.astype(int)
 
 skipped = []
 pos = 0
-debug = True
+debug = False
 for dimension in dimensions:
     print(f"Number of columns: {dimension}")
     for i, (mean, var) in tqdm(list(enumerate(mean_vars))):
