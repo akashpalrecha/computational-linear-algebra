@@ -30,10 +30,12 @@ def torchCov(matrix:torch.Tensor, transposed=False, debug=False):
     m = matrix.T if transposed else matrix
     if debug: set_trace()
     n = m.shape[0]
-    MIN, MAX = torch.finfo(m.dtype).min, torch.finfo(m.dtype).max
+    MAX = torch.finfo(m.dtype).max
     mean = m.mean(axis=0, keepdim=True)
     m.sub_(mean)
-    product = (m.T @ m).clamp(MIN, MAX)
+    product = (m.T @ m).clamp(0, MAX)
+    product[torch.isnan(product)] = 0
+    product[torch.isinf(product)] = MAX
     return product / (n-1)
 
 def torchPCA(matrix:torch.Tensor, k=2, transposed=False, fp16=True, debug=False):

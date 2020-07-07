@@ -78,7 +78,9 @@ def write_result(i:int, n:int, dimensions:int, k:int, mean:float, var:float, res
     res2 = [False, n, dimensions,k, mean, var] + res2
     df.iloc[i]   = res1
     df.iloc[i+1] = res2
-    if i % 5 == 0: df.to_csv(output)
+    if i % 5 == 0: 
+        df.to_csv(output)
+        print("Writing to CSV: done!")
         
 mean_vars = [[0, 1], [0, 4], [0, 16], [0, 64], [0, 128], [0, 512], [0, 2048], [0, 8192], [0, 32768], [0, 65519]]
 mean_vars+= [[1.5, 0.5], [1.5, 3], [3, 1]]
@@ -93,6 +95,7 @@ mean_vars+= [[24576, 8192], [24576, 32768], [49152, 16384]]
 n_values  = [100, 200, 500, 1000, 2000, 5000, 10000, 20000, 50000, 100000, 200000, 500000, 1000000, 2000000
             ,5000000, 10000000]
 dimensions= [10, 50, 100, 200, 400]
+# dimensions= [10,]
 
 
 total = len(n_values) * len(mean_vars) * len(dimensions) * 2
@@ -119,6 +122,7 @@ for dimension in dimensions:
     for i, (mean, var) in tqdm(list(enumerate(mean_vars))):
         if debug and i == 2: break
         sampler = get_gaussian_sampler(dimension, mean, var)
+        df.to_csv("results.csv")
         for n in tqdm(n_values):
             if dimension == 400 and n == 10000000: continue
             still_doing = max_retries
